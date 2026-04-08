@@ -1,0 +1,11 @@
+# requirements.txt
+streamlit
+anthropic
+sentence-transformers
+pinecone>=3.0.0
+azure-storage-blob
+pymupdf
+langchain-text-splitters
+snowflake-connector-python
+wikipedia-api
+python-dotenv

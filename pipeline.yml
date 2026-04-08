@@ -1,0 +1,37 @@
+name: RAG pipeline refresh
+
+on:
+  schedule:
+    - cron: "0 6 * * 1-5"   # 6 AM UTC, Monday–Friday
+  workflow_dispatch:          # allow manual trigger from GitHub UI
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          PINECONE_API_KEY:                 ${{ secrets.PINECONE_API_KEY }}
+          PINECONE_INDEX_NAME:              ${{ secrets.PINECONE_INDEX_NAME }}
+          AZURE_STORAGE_CONNECTION_STRING:  ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          AZURE_CONTAINER_NAME:             ${{ secrets.AZURE_CONTAINER_NAME }}
+          SNOWFLAKE_ACCOUNT:                ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          SNOWFLAKE_USER:                   ${{ secrets.SNOWFLAKE_USER }}
+          SNOWFLAKE_PASSWORD:               ${{ secrets.SNOWFLAKE_PASSWORD }}
+          SNOWFLAKE_DATABASE:               ${{ secrets.SNOWFLAKE_DATABASE }}
+          SNOWFLAKE_SCHEMA:                 ${{ secrets.SNOWFLAKE_SCHEMA }}
+          SNOWFLAKE_WAREHOUSE:              ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+        run: python pipeline.py
