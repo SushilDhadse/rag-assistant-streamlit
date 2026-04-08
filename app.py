@@ -113,10 +113,13 @@ with st.sidebar:
     st.header("Knowledge Base")
     st.markdown("""
     **Indexed Content**
-    - Fundamentals of Data Engineering
-    - The Data Engineer's Guide to Apache Spark
-    - Generative AI & LLMs for Dummies
-    - Curated Wikipedia articles (ETL, MLOps, Snowflake, etc.)
+    - 📖 Fundamentals of Data Engineering
+    - 📖 The Data Engineer's Guide to Apache Spark
+    - 📖 Generative AI & LLMs for Dummies
+    - 📖 Cloud Data Engineering for Dummies
+    - 📖 Cloud Data Warehousing for Dummies
+    - 📖 Building Applications with Snowpark for Dummies
+    - 🌐 Curated Wikipedia articles (ETL, MLOps, Snowflake, etc.)
     """)
     st.divider()
 
