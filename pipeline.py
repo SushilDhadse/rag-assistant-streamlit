@@ -45,7 +45,22 @@ BOOKS = [
     {
         "blob_name": "Generative-AI-and-LLMs-for-Dummies.pdf",
         "title": "Generative AI and LLMs for Dummies",
-        "url": "https://www.dummies.com/article/technology/information-technology/ai/generative-ai/",
+        "url": "https://www.snowflake.com/wp-content/uploads/2024/01/Generative-AI-and-LLMs-for-Dummies.pdf",
+    },
+    {
+        "blob_name": "cloud-data-engineering-for-dummies-.pdf",
+        "title": "Cloud Data Engineering for Dummies",
+        "url": "https://www.snowflake.com/wp-content/uploads/2020/12/cloud-data-engineering-for-dummies-.pdf",
+    },
+    {
+        "blob_name": "Cloud-Data-Warehousing-For-Dummies-3rd-Edition.pdf",
+        "title": "Cloud Data Warehousing for Dummies",
+        "url": "https://www.snowflake.com/wp-content/uploads/2023/11/Cloud-Data-Warehousing-For-Dummies-3rd-Edition.pdf",
+    },
+    {
+        "blob_name": "Building-Applications-with-Snowpark-for-Dummies.pdf",
+        "title": "Building Applications with Snowpark for Dummies",
+        "url": "https://www.snowflake.com/wp-content/uploads/2024/01/Building-Applications-with-Snowpark-for-Dummies.pdf",
     },
 ]
 

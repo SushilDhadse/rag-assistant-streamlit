@@ -89,7 +89,7 @@ def generate_rag_response(question: str):
 
     try:
         with client.messages.stream(
-            model="claude-sonnet-4-5",
+            model="claude-sonnet-4-6",
             max_tokens=1024,
             system=system_instruction,
             messages=[{"role": "user", "content": f"CONTEXT:\n{context_text}\n\nQUESTION: {question}"}]
