@@ -107,7 +107,7 @@ def generate_rag_response(question: str):
 
 # --- UI ---
 st.title("🧠 Data Engineering Knowledge Assistant")
-st.caption("Vector DB: Pinecone (Serverless) | Engine: Claude Sonnet | Orchestration: GitHub Actions")
+st.caption("Vector DB: Pinecone (Serverless) | Engine: Claude Sonnet | Orchestration: Prefect")
 
 with st.sidebar:
     st.header("Knowledge Base")

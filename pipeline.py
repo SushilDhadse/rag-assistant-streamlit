@@ -20,6 +20,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # --- Configuration ---
+# --- Configuration Constants ---
 TOPICS = [
     "Data engineering", "Extract, transform, load", "Data pipeline",
     "Snowflake Inc", "Apache Airflow", "Retrieval-augmented generation",
@@ -28,19 +29,19 @@ TOPICS = [
     "Apache Spark", "Apache Kafka", "Distributed computing", "MLOps",
     "Prompt engineering", "Transformer (deep learning)", "Semantic search",
     "Knowledge graph", "CI/CD", "Data governance", "Data mesh",
-    "Tokenization", "Graph database",
+    "Tokenization", "Graph database"
 ]
 
 BOOKS = [
     {
         "blob_name": "fundamentals_of_data_engineering.pdf",
         "title": "Fundamentals of Data Engineering",
-        "url": "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/",
+        "url": "https://freecomputerbooks.com/books/Fundamentals-of-Data-Engineering.pdf",
     },
     {
         "blob_name": "The-Data-Engineers-Guide-to-Apache-Spark.pdf",
         "title": "The Data Engineer's Guide to Apache Spark",
-        "url": "https://www.databricks.com/resources/ebook/learning-spark-lightning-fast-data-analytics",
+        "url": "https://github.com/xrenaissance/Functional-Programming_in_Scala_Specialization/blob/master/The-Data-Engineers-Guide-to-Apache-Spark.pdf",
     },
     {
         "blob_name": "Generative-AI-and-LLMs-for-Dummies.pdf",
